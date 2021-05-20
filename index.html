@@ -47,10 +47,10 @@
     </div>
     <textarea name="name" rows="8" cols="80">
     </textarea>
-    <input class="contact_submit" type="button"  value="送信">
+    <input id="contact_submit" type="button"  value="送信">
 
     <script language="javascript" type="text/javascript">
-      const contact_submit = document.getElementsByClassName("contact_submit");
+      const contact_submit = document.getElementById('contact_submit');
 
       contact_submit.addEventListener('mouseout', () => {
         contact_submit.style.backgroundColor = "lightblue";

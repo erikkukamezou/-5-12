@@ -47,28 +47,29 @@
     </div>
     <textarea name="name" rows="8" cols="80">
     </textarea>
-    <input class="contact-submit" type="button" name="" value="送信">
+    <input class="contact_submit" type="button"  value="送信">
 
-    <script>
-        // ここはJavaScriptのコードの記述欄
-        const target = document.getElementById('btn');
-     target.addEventListener('click', function {
-       const form = document.getElementById('textarea'); //フォームの取得
-       console.log('クリックされました');
-     },false);
-      // const  target= document.getElementsByClassName('contact-submit');
-      // target.addEventListener('click', function() {
-      //   console.log('クリックされました'); <!-- 追記 -->
-      // },false);
-      // console.log(contact-submit);
-      // button.addEventListener('mouseout', () => {
-      // button.stylesheet.backgroundColor = "lightblue";
-    // });
+    <script language="javascript" type="text/javascript">
+      const contact_submit = document.getElementsByClassName("contact_submit");
+
+      contact_submit.addEventListener('mouseout', () => {
+        contact_submit.style.backgroundColor = "lightblue";
+      });
+
+      contact_submit.addEventListener('mouseover', () => {
+        contact_submit.style.backgroundColor = "orange";
+      });
+
     </script>
 
 
 
+        <!-- // ここはJavaScriptのコードの記述欄
+        // const target =document.getElementsByClassName("contact_submit");
+        // target.addEventListener('mouseout',function() {
+        // target.style.backgroundColor = "lightblue";
+        // },false);
 
-
+    </script> -->
     </form>
 </body>
